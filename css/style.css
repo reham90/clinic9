@@ -451,11 +451,12 @@ color: #000;
 
 #close{
   display: none;
-  cursor: pointer;
-      color: #fff;
+    cursor: pointer;
+    color: #fff;
     font-size: 20px;
-    margin-right: -40px;
-    margin-top: 6px;
+    left: 291px;
+    margin-top: 7px;
+    position: absolute;
 }
 #bars{
   display: block;
@@ -1304,7 +1305,7 @@ body > .over-menu{
 .header{
    float: left;
    position: fixed;
-   height: 14%;
+   height: 30%;
 }
 .header .desk-menu{
   padding-top: 10px;
@@ -1367,7 +1368,7 @@ header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li
 }
 .flag{
       float: left;
-    margin-top: -19px;
+    margin-top: -9px;
 }
 .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
   display: none;

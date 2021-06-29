@@ -938,7 +938,7 @@ background: linear-gradient(0deg, rgba(0,0,0,0.5665616588432247) 0%, rgba(255,25
 }
 .owl-theme .owl-nav [class*=owl-]:hover{
   background: linear-gradient( 90deg, rgb(63,195,233) 0%, rgb(129,202,188) 100%);
-
+opacity: 0.9;
 }
 .owl-carousel .owl-nav button.owl-prev, .owl-carousel .owl-nav button.owl-next{
   background: #000;

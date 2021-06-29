@@ -76,7 +76,7 @@
     });
 
     $('header .desk-menu .menu-container .menu .menu-item-has-children ul').each(function(index) {
-        $(this).append('<li class="back"><a href="#">الرجوع  <i class="fal fa-angle-right ar-back"></i></a></li>');
+        $(this).append('<li class="back"><a href="#">back <i class="fal fa-angle-left ar-back"></i></a></li>');
     });
 
     // RESPONSIVE MENU NAVIGATION
@@ -127,7 +127,7 @@
               owl.owlCarousel({
                 margin: 10,
                 nav: true,
-                rtl:true,
+                rtl:false,
                 loop: true,
                  autoplay: true,
                   autoplayTimeout: 3000,

@@ -988,7 +988,9 @@ background: linear-gradient(0deg, rgba(0,0,0,0.5665616588432247) 0%, rgba(255,25
   background: -webkit-linear-gradient( 90deg, rgb(63,195,233) 0%, rgb(129,202,188) 100%);
   background: -ms-linear-gradient( 90deg, rgb(63,195,233) 0%, rgb(129,202,188) 100%);
 }
-
+.cat-img:hover img{
+  filter : brightness(0) invert(1);
+}
 .cat-block a{
   font-size: 18px;
   color: #000;

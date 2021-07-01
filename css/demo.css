@@ -1,0 +1,83 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background-color: #fff;
+	
+	font-size: 14px;
+	line-height: 22px;
+	color: #666;
+	position: relative;
+	-webkit-text-size-adjust: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1;
+	font-weight: bold;
+	margin: 20px 0 10px 0;
+}
+h1, h2, h3 {
+	font-size: 18px;
+}
+h4, h5, h6 {
+	font-size: 16px;
+}
+p {
+	margin: 0 0 10px 0;
+}
+a, a:link, a:active, a:visited, a:hover {
+	color: inherit;
+	text-decoration: underline;
+}
+
+nav:not(.mm-menu) {
+	display: none;
+}
+
+.header,
+.content,
+.footer {
+	text-align: center;
+}
+.header,
+
+.header.fixed {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #000;
+	color: #fff;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+.footer.fixed {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.header a {
+	display: block;
+	/* padding: 11px; */
+	margin: 2px;
+	/* position: relative; */
+	cursor: pointer;
+}
+.header a i{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-size: 25px;
+	color: #fff;
+}
+#close{
+	display: none;
+	cursor: pointer;
+}
+#bars{
+	display: block;
+}

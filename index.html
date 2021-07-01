@@ -22,6 +22,9 @@
 <link rel="stylesheet" href="css/owl.theme.default.min.css">
  <link rel="stylesheet" href="css/owl.carousel.css">
 
+<!-- hover.css -->
+<link href="css/hover.css" rel="stylesheet" media="all">
+
  <!-- stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 	
@@ -41,7 +44,7 @@
 <header class="header" id="header-sroll">
 <div class="container">
 <div class="row">
-<div class="col-xs-12">
+<div class="">
 <div class="desk-menu">
 <div class="logo">
 <a href="#"><img src="images/logo.png" alt="logo"></a>	
@@ -114,20 +117,28 @@
 </div><!--#searchbar-->
 </li>
 </a></li>
-	<li><a href="#"><span class="lnr lnr-user"></span></a></li>
+	<li><div class="dropdown">
+  <button class="dropbtn"><span class="lnr lnr-user"></span></button>
+  <div class="dropdown-content">
+    <a href="#">تسجيل دخول  </a>
+    <a href="#">تسجيل جديد  </a>
+  </div>
+</div>
+</li>
 	<li><a href="#"><span class="lnr lnr-heart"></span></a></li>
 	<li><a href="#"><span class="lnr lnr-cart"></span></a></li>
-</ul>
-
-
-<p class="flag"><div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">العربية  <i class="fal fa-angle-down"></i></button>
+	<li><p class="flag"><div class="dropdown d-two">
+  <button  class="dropbtn"><img src="images/flag.png" alt="flag">العربية  <i class="fal fa-angle-down"></i></button>
   <div id="myDropdown" class="dropdown-content">
     <a href="#home">العربية  </a>
     <a href="#about">الانجليزية  </a>
     <a href="#contact">الفرنسية </a>
   </div>
-</div></p>
+</div></p></li>
+</ul>
+
+
+
 
 
 							</div>
@@ -204,7 +215,7 @@
 <div class="container">
 	<div class="categories">
 		<div class="cat-block">
-			<a class="mt0" href="#"><div class="cat-img">
+			<a class="mt0" href="#"><div class="cat-img hvr-radial-out">
 			<img src="images/cat-1.png" alt="face">
 		</div>
 		<a href="#">الجلدية والتجميل  </a>
@@ -212,28 +223,28 @@
 
 
 		<div class="cat-block">
-			<a class="mt0" href="#"><div class="cat-img">
+			<a class="mt0" href="#"><div class="cat-img hvr-radial-out">
 			<img src="images/cat-2.png" alt="face">
 		</div>
 		<a href="#">الليزر  </a>
 		</div></a>
 
 		<div class="cat-block">
-			<a class="mt0" href="#"><div class="cat-img">
+			<a class="mt0" href="#"><div class="cat-img hvr-radial-out">
 			<img src="images/cat-3.png" alt="face">
 		</div>
 		<a href="#"> الأسنان  </a>
 		</div></a>
 
 		<div class="cat-block">
-			<a class="mt0" href="#"><div class="cat-img">
+			<a class="mt0" href="#"><div class="cat-img hvr-radial-out">
 			<img src="images/cat-4.png" alt="face">
 		</div>
 		<a href="#">النساء والولادة   </a>
 		</div></a>
 
 		<div class="cat-block">
-			<a class="mt0" href="#"><div class="cat-img">
+			<a class="mt0" href="#"><div class="cat-img hvr-radial-out">
 			<img src="images/cat-5.png" alt="face">
 		</div>
 		<a href="#">الخدمات العامة  </a>
@@ -375,11 +386,11 @@
 			<div class="col-md-3 mp">
 			<a class="footer-logo" href="#"><img src="images/logo.png" alt="logo"></a>
 			<ul class="social">
-				<li><a href="#"><i class="fab fa-whatsapp"></i></a></li>
-				<li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
-				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
-				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-				<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+				<li><a href="#" class="hvr-radial-out"><i class="fab fa-whatsapp"></i></a></li>
+				<li><a href="#" class="hvr-radial-out"><i class="fab fa-snapchat-ghost"></i></a></li>
+				<li><a href="#" class="hvr-radial-out"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="#" class="hvr-radial-out"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="#" class="hvr-radial-out"><i class="fab fa-facebook-f"></i></a></li>
 			</ul>
 		</div>
 		<div class="col-md-9 mp footer-links hidden-xs hidden-sm">

@@ -115,10 +115,17 @@
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
- $("#searchbar .search-label").on("click", function(e){
-  e.preventDefault();
-  $("#searchbar").toggleClass("collapsed");
-});//click
+$(document).ready(function(){
+    // Add Active Class
+    $(".search-icon").click(function(){
+        $(".search-screen").addClass("active");
+    });
+
+    // Remove Active Class
+    $(".close-icon").click(function(){
+        $(".search-screen").removeClass("active");
+    });
+});
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

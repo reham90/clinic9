@@ -99,24 +99,12 @@
 
 
 <ul class="search-bar">
-	<li><a href="#"><li>
-    	<div id="searchbar" class="collapsed">
-   <div id="search-box">
-     <div id="sliding-panel-outer">       
-      <div id="sliding-panel-inner">
-      <input type="text" id="search-input" />
-      <button id="search-submit">بحث</button>
-      </div><!--#sliding-panel-inner-->
-     </div><!--#sliding-panel-outer-->
-     
-      <div class="search-label">
-       <i class="fal fa-search hand"></i>
-        <i class="fa fa-times hand"></i>
-      </div>
-   </div><!--#search-box-->
-</div><!--#searchbar-->
-</li>
-</a></li>
+	<li><span class="lnr lnr-magnifier search-icon"></span></i>
+    <div class="search-screen">
+        <i class="close-icon fas fa-times"></i>
+        <input type="text" class="search-box" placeholder="اكتب ما تبحث عنه  " onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'اكتب ما بتحث عنه  '">
+    </div></li>
 	<li><div class="dropdown">
   <button class="dropbtn"><span class="lnr lnr-user"></span></button>
   <div class="dropdown-content">
@@ -535,13 +523,9 @@
 </div>
 		</div>
 		<div class="clearfix copy">
-			<ul class="pay">
-				<li><a href="#"><img src="images/mada.png" alt="paying method"></a></li>
-				<li><a href="#"><img src="images/pay.png" alt="paying method"></a></li>
-				<li><a href="#"><img src="images/card.png" alt="paying method"></a></li>
-				<li><a href="#"><img src="images/visa.png" alt="paying method"></a></li>
-			</ul>
-			<p>© جميع الحقوق محغوظة شركة التاسعة الجديد الطبي 2021 تصميم وتطوير  <a href="#"><img src="images/tk.png" alt="tk logo"></a></p>
+			<img class="payment" src="images/pay.png" alt="pay methods">
+			<p>© جميع الحقوق محغوظة شركة التاسعة الجديد الطبي 2021 </p>
+			<span>تصميم وتطوير  <a href="#"><img src="images/tk.png" alt="tk logo"></a></span>
 		</div>
 	</footer>
 </div>

@@ -159,3 +159,29 @@ $(document).ready(function(){
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+ $(document).ready(function() {
+              var owl = $('.category');
+              owl.owlCarousel({
+                margin: 10,
+                nav: true,
+                rtl:true,
+                loop: true,
+                 autoplay: true,
+                  autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                navText: ["<i class='fal fa-angle-right'></i>", "<i class='fal fa-angle-left'></i>"],
+                responsive: {
+                  0: {
+                    items: 2
+                  },
+                  600: {
+                    items:2
+                  },
+                   1200: {
+                    items: 5
+                  }
+                   
+                }
+              })
+
+            })

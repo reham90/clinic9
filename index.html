@@ -40,15 +40,44 @@
 
  <!-- start navbar -->
 <div class="over-menu"></div>
-<div id="wrap">
+
 <header class="header" id="header-sroll">
 <div class="container">
-<div class="row">
-<div class="">
+
 <div class="desk-menu">
+
+	<div class="hamburger-menu">
+<div class="bar"><span class="lnr lnr-menu" id="bars"></span><span class="lnr lnr-cross"id="close"></span></div>
+									</div>
 <div class="logo">
 <a href="#"><img src="images/logo.png" alt="logo"></a>	
 								</div>
+
+<ul class="search-bar hidden-lg hidden-md">
+	<li><span class="lnr lnr-magnifier search-icon"></span>
+    <div class="search-screen">
+        <span class="lnr lnr-cross close-icon"></span>
+        <input type="text" class="search-box" placeholder="اكتب ما تبحث عنه  " onfocus="this.placeholder = ''"
+onblur="this.placeholder = 'اكتب ما  تبحث عنه   '" <a class="ser-2" href="#"><span class="lnr lnr-magnifier search-icon ser-w"></span></a>>
+    </div></li>
+	<li><div class="dropdown">
+  <button class="dropbtn"><span class="lnr lnr-user"></span></button>
+  <div class="dropdown-content">
+    <a href="#">تسجيل دخول  </a>
+    <a href="#">تسجيل جديد  </a>
+  </div>
+</div>
+</li>
+	<li><a href="#"><span class="lnr lnr-heart"></span></a></li>
+	<li><a href="#"><span class="lnr lnr-cart"></span></a></li>
+	
+</ul>
+
+
+
+
+
+
 <nav class="box-menu">
 <div class="menu-container">
 <div class="menu-head">
@@ -88,22 +117,28 @@
 <li class="menu-item menu-item-has-children">
 	<a href="#">اتصل بنا  </a>
 </li>
+<li class="hidden-lg hidden-md"><p class="flag"><div class="dropdown d-two">
+  <button  class="dropbtn"><img class="pl5" src="images/flag.png" alt="flag">العربية  <i class="fal fa-angle-down"></i></button>
+  <div id="myDropdown" class="dropdown-content d-content-two">
+    <a href="index.html">العربية  </a>
+    <a href="index-eng.html">الانجليزية  </a>
+    <a href="#contact">الفرنسية </a>
+  </div>
+</div></p></li>
 			<li class="line"></li>
 </ul>
 	</div>
 									</div>
-									<div class="hamburger-menu">
-										<div class="bar"><span class="lnr lnr-menu" id="bars"></span><span class="lnr lnr-cross"id="close"></span></div>
-									</div>
+									
 								</nav>
 
 
-<ul class="search-bar">
-	<li><span class="lnr lnr-magnifier search-icon"></span></i>
+<ul class="search-bar hidden-xs hidden-sm">
+	<li><span class="lnr lnr-magnifier search-icon"></span>
     <div class="search-screen">
-        <i class="close-icon fas fa-times"></i>
+        <span class="lnr lnr-cross close-icon"></span>
         <input type="text" class="search-box" placeholder="اكتب ما تبحث عنه  " onfocus="this.placeholder = ''"
-onblur="this.placeholder = 'اكتب ما بتحث عنه  '">
+onblur="this.placeholder = 'اكتب ما  تبحث عنه   '" <a class="ser-2" href="#"><span class="lnr lnr-magnifier search-icon ser-w"></span></a>>
     </div></li>
 	<li><div class="dropdown">
   <button class="dropbtn"><span class="lnr lnr-user"></span></button>
@@ -115,11 +150,11 @@ onblur="this.placeholder = 'اكتب ما بتحث عنه  '">
 </li>
 	<li><a href="#"><span class="lnr lnr-heart"></span></a></li>
 	<li><a href="#"><span class="lnr lnr-cart"></span></a></li>
-	<li><p class="flag"><div class="dropdown d-two">
-  <button  class="dropbtn"><img src="images/flag.png" alt="flag">العربية  <i class="fal fa-angle-down"></i></button>
+	<li class="hidden-xs hidden-sm"><p class="flag"><div class="dropdown d-two">
+  <button  class="dropbtn"><img class="pl5" src="images/flag.png" alt="flag">العربية  <i class="fal fa-angle-down"></i></button>
   <div id="myDropdown" class="dropdown-content">
-    <a href="#home">العربية  </a>
-    <a href="#about">الانجليزية  </a>
+    <a href="index.html">العربية  </a>
+    <a href="index-eng.html">الانجليزية  </a>
     <a href="#contact">الفرنسية </a>
   </div>
 </div></p></li>
@@ -129,13 +164,13 @@ onblur="this.placeholder = 'اكتب ما بتحث عنه  '">
 
 
 
-							</div>
-						</div>
-					</div>
+							
+					
 				</div>
 			</header>
 			
-		</div>
+		</div></div>
+<div class="clr"></div>
 
  <!-- end navbar -->
 
@@ -201,45 +236,122 @@ onblur="this.placeholder = 'اكتب ما بتحث عنه  '">
 
 <!-- start categories -->
 <div class="container">
-	<div class="categories">
-		<div class="cat-block">
+
+
+ <div class="owl-carousel category categories owl-theme">
+            <div class="item">
+           
+             	<div class="cat-block">
 			<a class="mt0" href="#"><div class="cat-img hvr-radial-out">
 			<img src="images/cat-1.png" alt="face">
 		</div>
 		<a href="#">الجلدية والتجميل  </a>
-		</div></a>
-
-
-		<div class="cat-block">
+		</a></div>
+            
+          </div>
+         
+             <div class="item">
+            	<div class="cat-block">
 			<a class="mt0" href="#"><div class="cat-img hvr-radial-out">
 			<img src="images/cat-2.png" alt="face">
 		</div>
 		<a href="#">الليزر  </a>
-		</div></a>
+		</a></div>
 
-		<div class="cat-block">
+
+</div>
+  <div class="item">
+
+	<div class="cat-block">
 			<a class="mt0" href="#"><div class="cat-img hvr-radial-out">
 			<img src="images/cat-3.png" alt="face">
 		</div>
 		<a href="#"> الأسنان  </a>
-		</div></a>
-
-		<div class="cat-block">
+		</a></div>
+</div>
+  <div class="item">
+	<div class="cat-block">
 			<a class="mt0" href="#"><div class="cat-img hvr-radial-out">
 			<img src="images/cat-4.png" alt="face">
 		</div>
 		<a href="#">النساء والولادة   </a>
-		</div></a>
+		</a></div>
+</div>
+  <div class="item">
 
-		<div class="cat-block">
+
+	<div class="cat-block">
 			<a class="mt0" href="#"><div class="cat-img hvr-radial-out">
 			<img src="images/cat-5.png" alt="face">
 		</div>
-		<a href="#">الخدمات العامة  </a>
-		</div></a>
+		<a href="#">الخدمات العامة   </a>
+		</a></div>
+</div>
+		
+
+              <div class="item">
+           
+             	<div class="cat-block">
+			<a class="mt0" href="#"><div class="cat-img hvr-radial-out">
+			<img src="images/cat-1.png" alt="face">
+		</div>
+		<a href="#">الجلدية والتجميل  </a>
+		</a></div>
+            
+          </div>
+         
+             <div class="item">
+            	<div class="cat-block">
+			<a class="mt0" href="#"><div class="cat-img hvr-radial-out">
+			<img src="images/cat-2.png" alt="face">
+		</div>
+		<a href="#">الليزر  </a>
+		</a></div>
 
 
-	</div>
+</div>
+  <div class="item">
+
+	<div class="cat-block">
+			<a class="mt0" href="#"><div class="cat-img hvr-radial-out">
+			<img src="images/cat-3.png" alt="face">
+		</div>
+		<a href="#"> الأسنان  </a>
+		</a></div>
+</div>
+  <div class="item">
+	<div class="cat-block">
+			<a class="mt0" href="#"><div class="cat-img hvr-radial-out">
+			<img src="images/cat-4.png" alt="face">
+		</div>
+		<a href="#">النساء والولادة   </a>
+		</a></div>
+</div>
+  <div class="item">
+
+
+	<div class="cat-block">
+			<a class="mt0" href="#"><div class="cat-img hvr-radial-out">
+			<img src="images/cat-5.png" alt="face">
+		</div>
+		<a href="#">الخدمات العامة   </a>
+		</a></div>
+</div>
+          
+         
+          
+       
+
+
+     
+          
+          
+         
+          
+          </div>
+
+
+
 </div>
 
 <!-- end categories -->

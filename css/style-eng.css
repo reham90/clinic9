@@ -95,7 +95,7 @@ a {
 .header .desk-menu {
   position: relative;
   display: flex;
-  /* padding-top: 22px; */
+  padding-top: 22px;
   padding-bottom: 22px;
   justify-content: space-between;
   align-items: center;

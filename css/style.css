@@ -1723,7 +1723,7 @@ header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li
 .ar-left{
       position: absolute;
     left: 15px;
-    top:0px;
+    top:7px;
     font-size: 24px;
     font-weight: 300;
 }

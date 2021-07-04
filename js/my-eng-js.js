@@ -1,15 +1,22 @@
+$(document).ready(function(){
+  //the trigger on hover when cursor directed to this class
+   
+
+ if($(window).width() < 991) {
+    $(".sub-menu").addClass("submenu")
+    $(".submenu").removeClass("sub-menu")
+    $(".before-sub").click(function(){
+      $(this).siblings('ul').slideToggle(300);
+    });
+  }
+  
+ });
+
 (function($) {
     var size;
   
     //SMALLER HEADER WHEN SCROLL PAGE
-    function smallerMenu() {
-        var sc = $(window).scrollTop();
-        if (sc > 40) {
-            $('#header-sroll').addClass('small');
-        }else {
-            $('#header-sroll').removeClass('small');
-        }
-    }
+ 
 
     // VERIFY WINDOW SIZE
     function windowSize() {
@@ -20,16 +27,7 @@
         }
     };
 
-     // ESC BUTTON ACTION
-    $(document).keyup(function(e) {
-        if (e.keyCode == 27) {
-            $('.bar').removeClass('animate');
-            $('body').removeClass('open-menu');
-            $('header .desk-menu .menu-container .menu .menu-item-has-children a ul').each(function( index ) {
-                $(this).removeClass('open-sub');
-            });
-        }
-    });
+    
 
     $('#cd-primary-nav > li').hover(function() {
         $whidt_item = $(this).width();
@@ -75,23 +73,9 @@
         
     });
 
-    $('header .desk-menu .menu-container .menu .menu-item-has-children ul').each(function(index) {
-        $(this).append('<li class="back"><a href="#">back <i class="fal fa-angle-left ar-back"></i></a></li>');
-    });
+   
 
-    // RESPONSIVE MENU NAVIGATION
-    $('header .desk-menu .menu-container .menu .menu-item-has-children > a').on('click', function(e) {
-        e.preventDefault();
-        if(size <= 991){
-            $(this).next('ul').addClass('open-sub');
-        }
-    });
-
-    // CLICK FUNCTION BACK MENU RESPONSIVE
-    $('header .desk-menu .menu-container .menu .menu-item-has-children ul .back').on('click', function(e) {
-        e.preventDefault();
-        $(this).parent('ul').removeClass('open-sub');
-    });
+    
 
     $('body .over-menu').on('click', function() {
         $('body').removeClass('open-menu');
@@ -102,9 +86,7 @@
         windowSize();
     });
 
-    $(window).scroll(function(){
-        smallerMenu();
-    });
+    
 
     $(window).resize(function(){
         windowSize();

@@ -2157,7 +2157,18 @@ header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li
 
 
 @media only screen and (max-width:1440px)  and (min-width: 960px)  {
-
+.logo{
+  width: 200px;
+}
+.search-bar{
+  width: 270px;
+}
+.slider-text{
+  margin-top: 150px;
+}
+.social li{
+  margin-right: 5px;
+}
 }
 
 

@@ -91,6 +91,7 @@
     $('header .desk-menu .menu-container .menu .menu-item-has-children ul .back').on('click', function(e) {
         e.preventDefault();
         $(this).parent('ul').removeClass('open-sub');
+       
     });
 
     $('body .over-menu').on('click', function() {
@@ -185,3 +186,8 @@ $(document).ready(function(){
               })
 
             })
+
+
+
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+

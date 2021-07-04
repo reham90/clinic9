@@ -1767,7 +1767,7 @@ margin-top: 12px;
 
 .ar-left{
       position: absolute;
-      right: 15px;
+      right: 0px;
       top: 7px;
       font-size: 24px;
       font-weight: 300;
@@ -1869,11 +1869,7 @@ header .desk-menu .menu-container .menu > li:hover.menu-item-has-children .sub-m
     float: none;
     text-align: center;
 }
-header .desk-menu .menu-container .menu > li:hover.menu-item-has-children .sub-menu{
-  position: relative;
-  /* padding:  0 !important; */
-  left: -10px;
-}
+
 }
 
 

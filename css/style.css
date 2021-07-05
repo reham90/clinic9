@@ -710,9 +710,9 @@ color: #000;
      /* width: 40px; */
      /* height: 40px; */
      display: flex;
-     justify-content: space-between;
+     justify-content: flex-start;
      align-items: center;
-     width: 160px;
+     width: 174px;
   }
   header .hamburger-menu .bar,
 header .hamburger-menu .bar::after,
@@ -1544,7 +1544,6 @@ body > .over-menu{
   /* float: right; */
   width: auto;
   margin-top: 6px;
-  /* margin-right: -30px; */
 }
 .logo img{
       /* position: absolute; */
@@ -1722,7 +1721,7 @@ header .desk-menu .menu-container .menu > li.menu-item-has-children .sub-menu li
       /* margin-right: 20px; */
 }
 .search-bar li{
-  margin-left: 10px;
+  margin-left: 15px;
 }
 .d-two{
   width: 100%;
